@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Created by Kim Weiss, EdTech 502, Summer 2013 */
+
+/* tag styles */
+
+body {
+	font-family: Arial,Helvetica,Gill Sans,sans-serif;
+	font-size: 100%;
+	color: #003300;
+	background-color:#47C456;
+	margin: 50px;
+}
+
+header {
+	text-align: center;
+	background-color: #FFF;
+	background-image:url(../images/headerbar.png);
+	background-repeat:no-repeat;
+	background-color:#FFC;
+	line-height:60px;
+}
+
+h1,h2,h3,h4 {
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+}
+
+h1 {
+	font-size:175%
+}
+
+h2 {
+	font-size:125%;
+}
+
+hr {
+	color: #003300;
+}
+
+section {
+	background-color: #FFC;
+	padding: 5px 8px 8px 8px;
+}
+
+ul {
+	list-style-type:square;
+}
+
+footer {
+	font-size: 75%;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align:center;
+	background-color:#FFF;
+	background-image:url(../images/headerbarflip.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-color:#FFC;
+}
+
+/* id styles */
+#main {
+	width:900px;
+	margin: 0 auto;
+}
+
+#contactinfo {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:16px;
+}
+
+#validbox {
+	padding-top:5px;
+	margin-top:10px;
+}
+
+/* class styles */
+.subjectlink {
+	color: #804000;
+	font-style: italic;
+}
+
+

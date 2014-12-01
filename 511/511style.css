@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+body	{
+	background-color: #FCE1CE;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+#headcontent	{
+	margin: 0 auto;
+	width:900px;
+	padding: 5px;
+}
+
+#main	{
+	margin: 0 auto;
+	width:900px;
+	background-color:#fce1ce;
+	padding: 5px;
+}
+
+header	{
+	background:url(media/headbackground.png) repeat-x;
+	height:150px;
+}
+
+h1, h2	{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	margin-top:4px;
+	margin-bottom:4px;	
+}
+
+#title	{
+	
+}
+
+#subtitle	{
+	
+}
+
+h1	{
+	color:#fce1ce;
+}
+
+h2	{
+	color:#000;
+}
+
+#maincontent	{
+	border: thin solid #d12535;
+	padding: 0 8px;
+}
+
+nav	{
+
+}
+
+nav ul	{
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+	
+nav li a{
+	float:left;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: #d12535;
+	height: 24px;
+	padding: 4px 10px 4px 10px;
+	line-height: 24px; 
+	text-decoration: none;
+	border-top:thin solid red;
+	border-right:thin solid red;
+	border-left:thin solid red;
+	margin-right: 5px;
+}	
+	
+nav li a:link, nav li a:visited {
+	color: #fce1ce;
+}
+
+nav li a:hover{
+	color: #d12535;
+	background-position: 100% -32px;
+	background: #fce1ce;
+}
+
+	
+nav li.selected{
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	color: #000;
+	padding-left: 3px;
+	background-position: 100% -64px;
+	font-size: 80%;	
+	line-height: 35px;
+}
+
+footer	{
+	font-style: italic;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	margin-top: 8px;
+	
+}

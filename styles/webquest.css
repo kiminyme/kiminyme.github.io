@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*--tags--*/
+body {
+	background-color:#900;
+	background-image:url(../images/redtile.png);
+	color: #fff;
+	line-height:125%;
+	font-family:Arial, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+header {
+	height: 140px;
+	border-bottom:thin solid #000;
+}
+
+nav {
+	float:left;
+	width:160px;
+	padding: 10px 0;
+}
+
+article {
+	float:left;
+	width: 725px;
+	padding: 10px 20px 10px 30px;
+}
+
+footer {
+	font-size: 75%;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align:center;
+	border-top:thin solid #000;
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;
+}
+
+
+h1, h2, h3, h4 {
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+h1 {
+	text-align:center;
+	height: 175%;
+}
+
+h2 {
+	height:150%
+}
+
+h3 {
+	font-weight:700
+}
+
+header h1 {
+	padding-top:50px;
+}
+
+img {
+	border: none;
+}
+
+a:link {
+	color: #510505;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+nav ul{
+	list-style: none; 
+	margin-bottom: 15px;
+}
+
+nav li {
+	border-bottom: 1px solid #666; 
+}
+
+nav a, nav a:visited { 
+	padding: 5px 5px 5px 15px;
+	display: block; 
+	width: 140px;
+	text-decoration: none;
+	background-color: #fbc7c7;
+	margin-left: -30px;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+	background-color: #deb2b2;
+	color: #000;
+	box-shadow: -3px -3px 2px #000 inset;
+}
+
+article a:link{
+	color: #fff;
+}
+
+article a:visited {
+	color: #deb2b2;
+}
+
+article a:hover, article a:active, article a:focus {
+	background-color: #deb2b2;
+	color: #900;
+	padding:4px;
+}
+
+th {
+	color:#900;
+	background-color:#FBC7C7;
+	border-right:#900 thin solid;
+	border-bottom:#900 thin solid;
+}
+
+td {
+	padding: 4px 10px;
+	border-right: #FBC7C7 thin solid;
+	border-bottom: #FBC7C7 thin solid;
+	vertical-align:top;
+}
+
+
+
+/*--IDs--*/
+#main {
+	margin: 0px auto;
+	width: 940px;
+	background:url(../images/computers.png) top left no-repeat;
+	background-color:#900;
+	border: thin solid #000;
+	box-shadow: 10px 10px 5px #000;
+	margin-bottom:50px;
+}
+
+#studentid {
+	font-size:75%;
+	font-style:italic;
+}
+
+#eval {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+
+
+/*--classes--*/
+.nextstep {
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size:110%;
+	text-align: center;
+}
+
+.stress {
+	font-weight:bold;
+}
+
+.pointvalue {
+	text-align:center;
+}
+
+
+	
+
+.wordicon {
+	float:left;
+	padding: 0 8px 8px 0;
+}

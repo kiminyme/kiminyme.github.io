@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+/* Created by Kim Weiss, Summer 2013 */
+
+/* tag styles */
+body {
+	font-size:100%;
+	color: #006;
+	font-family:Arial, Tahoma, "Tw Cen MT", Verdana, sans-serif;
+	background-color: #006;
+	text-align:center;
+}
+
+header {
+	margin: 10px;
+}
+
+h1, h2, h3, h4 {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+
+h1 {
+	font-size: 200%;
+	color:#FFF;
+	text-align:center;
+}
+
+h2 {
+	font-size: 150%
+}
+
+li {
+	margin-bottom: 10px
+}
+
+section {
+	background-color:#f2fffe;
+	margin: 10px;
+	padding: 2px 15px;
+}
+
+footer {
+	font-size: 75%;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align:center;
+}
+
+/* class styles */
+.standout {
+	font-weight:900;
+	font-style:italic;
+}
+
+/* id styles */
+#main {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#levellist {
+	width:50%;
+	float:right;
+	background-color:#006;
+	margin-top:-10px;
+	margin-bottom:5px;
+}
+
+#callout{
+	background-color:#c4f1f2;
+	padding: 2px 15px;	
+}
+	
+#rulebox {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border: 5px solid #006;
+}
+
+#validbox {
+	padding-top:5px;
+	margin-top:10px;
+}
+
+#definition {
+	float:none;
+}
+
+/* Created by Kim Weiss, Summer 2013 */

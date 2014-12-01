@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+/* Created by Kim Weiss, Summer 2013 */
+
+/* tag styles */
+body {
+	font-size:100%;
+	font-weight:500;
+	color: #ffc;
+	background-color: #570813;
+	font-family:Arial, Tahoma, "Tw Cen MT", Verdana, sans-serif;
+	text-align:center;
+	line-height: 120%;
+}
+
+h1, h2, h3, h4 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+h1 {
+	font-size: 200%;
+	text-align:center;
+	color: #570813;
+	background-color:#ffc;
+	border:2px solid #570813;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	line-height: 150%;
+}
+
+h2 {
+	font-size: 150%;
+	color: #570813;
+	background-color:#ffc;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	margin: 3px -15px;
+	line-height: 150%;
+	border:2px solid #570813;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+
+}
+
+h3 {
+	font-size: 125%
+}
+
+aside {
+	float:right;
+	width: 40%;
+	border:thin solid #ffc;
+	box-shadow: -5px 5px 5px #ffc;
+	margin-right:-5px;
+	color:#ffc;
+	background-color:#570813;
+}
+
+a {
+	color:#ffc;
+	background-color:#570813;
+	font-size:100%;
+	font-weight:500;
+}
+
+a:link {
+	text-decoration:underline;
+}
+
+a:visited {
+	text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+	font-weight:bold;
+}
+
+
+section, aside, footer {
+	font-size:100%;
+	font-weight:500;
+	color:#ffc;
+	background-color:#570813;
+	margin: 0px 10px 0px 10px;
+	padding: 2px 15px;
+	text-align:left;
+}
+
+section {
+}
+
+footer {
+	font-size: 75%;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align:center;
+	float:none;
+	border-top: thick solid #ffc;
+	padding-top: 8px;
+}
+
+/* class styles */
+.standout {
+	font-weight:900;
+	font-style:italic;
+}
+
+/* id styles */
+#main {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+/* Created by Kim Weiss, Summer 2013 */

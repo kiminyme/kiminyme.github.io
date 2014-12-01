@@ -1,0 +1,91 @@
+<!doctype html>
+<!--This page was created for Module 4 of EdTech 502 in Summer 2013. Page created by Kim Weiss.-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weiss Accessibility Summer 2013</title>
+<link href="../styles/accessibility.css" rel="stylesheet" type="text/css" title="Light on Dark">
+<!--include alternate style sheet-->
+<link href="../styles/accessibility2.css" rel="alternate stylesheet" type="text/css" title="Dark on Light">
+</head>
+
+<body>
+
+<div id="main">
+
+<header>
+  <h1>Web Accessibility for Users with Low Vision</h1>
+</header>
+
+<aside>
+  <p>Click <a href="#infolinks">this text</a> to jump to a list of Websites with more information.</p>
+</aside>
+
+<section>
+  <p>This page is designed for a beginning course in Web Design using HTML and CSS at the university level.</p>
+  <p>The following information explains what considerations should be taken into account when designing a Web page to ensure that the information is readily available to a user with limited or no vision. Many of these steps will be useful to <span class="standout">all</span> visitors of the Web site.</p>
+  <p>There are three categories of users that these steps will help:</p>
+  <ul>
+    <li>Persons with reading disabilities who may use a screen reader or other assistive devices.</li>
+    <li>Persons with low vision who can see, but who cannot see well enough to read content easily without assistive technology.</li>
+    <li>Persons with no vision at all, who depend on a screen reader or Braille keyboard, and who cannot use a mouse or other pointing device.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>For visitors with low vision</h2>
+  <p>Remember that not all people with limited vision are completely blind. Improve your Web design by making the content more visible overall.</p>
+  <p><span class="standout">Use maximal contrast</span>. A visitor with limited vision may have problems distinguishing color sets readily. To this end, the designer of the Web page should focus on making sure that there is sufficient contrast between the text (foreground) colors and the background colors. Use dark colors on a light background or vice versa.</p>
+  <p><span class="standout">Use standard serif or sans serif fonts.</span> Script or handwriting fonts may be difficult to read.</p>
+  <p><span class="standout">Use standard font sizes.</span> If the designer uses font definitions that force the letters to be too small, it may be hard for a visitor to change the settings in their browser to display a larger font. Using percentage or relative sizes rather than set pixel sizes makes the settings more flexible for everyone.</p>
+  <p><span class="standout">Use a standard navigation bar</span> with the same links in the same order on each page. This will help all visitors more easily navigate from one page to the next.</p>
+  <p><span class="standout">Avoid including meaningful text as graphics files. </span>Screen readers cannot read text that is embedded in a graphic element, and this text will not size easily for users who use magnification.</p>
+  <p>Consider including <span class="standout">an alternate CSS page</span> with styles that present the content in a more linear fashion. A no-style option is built into the View menu in current versions of Firefox and Internet Explorer, and it may be useful to preview your page using that option. An alternate style page will give you more control of how the information flows on the page than the no-style option does.</p>
+</section>
+
+<section>
+  <h2>For visitors who use screen readers</h2>
+  <p>Keep in mind that not all visitors who use screen readers are blind. People with reading problems like dyslexia will be able to see the page, so it should still be visually interesting. However, you should also design for users who cannot use a mouse or other pointing device, either because they cannot see where the device is pointing, or because they cannot hold a pointing device.</p>
+  <p>Pay attention to the source code. </p>
+  <ul>
+    <li><span class="standout">DO</span> Include text descriptions of any pictures or visual elements with meaningful content that are included in the page. If the picture is a hyperlink, include a description of what the link will open. </li>
+    <li><span class="standout">DON'T </span>include content that requires a mouse or other pointing device to see the content, like menus that open only when the user points to them.</li>
+    <li><span class="standout">DO</span> provide links that allow users to skip over long scripts or other text elements in the source code that do not provide meaningful content for the page.</li>
+    <li><span class="standout">DON'T</span> use colors alone to convey meaning. This will be meaningless to someone who can't see colors at all.</li>
+    <li>DO include a link at the top of the page to allow the user to skip the navigation bar at the top and jump straight to the main content of the page.</li>
+    <li><span class="standout">DON'T</span> include too many hyperlinks on the same page. Grouping content and using subgroups can help limit the amount of content that a blind user has to scan to find the information they are looking for (and it can help even visitors with normal vision navigate faster to a specific topic within the Web site.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><a id="infolinks"></a>For more information:</h2>
+  <p><a href="http://www.aao.org/publications/eyenet/201205/practice_perf.cfm" target="_blank">AAO.org: Ensure your website is accessible to patients with low vision</a>: <br>
+    This page is written for the American Association of Opthalmology, for general information about how low vision can affect accessibility to the information in a Web page.</p>
+  <p><a href="http://alistapart.com/article/lowvision" target="_blank">A List Apart: Big, Stark &amp; Chunky</a>: <br>
+    This page is written for a Website devoted to sharing information about developing and using the Web. The author advocates creating a separate CSS page that is geared toward visitors with low vision, so that users can switch to a more vision-friendly version of the page.</p>
+  <p><a href="http://redish.net/content/papers/interactions.html" target="_blank">Guidelines for Accessible and Usable Web Sites: Observing Users Who Work With Screen Readers</a>: <br>
+    This site gives recommendations for Web page design based on observations and surveys of how users use screen readers to navigate Web pages.</p>
+  <p><a href="http://blog.templatemonster.com/2012/04/11/low-vision-assistive-technologies-web-design/" target="_blank">Low Vision Assistive Technologies in Web Design</a>: <br>
+    This site presents techniques that can be used to make a Web page more user-friendly to Braille monitors and other visitors with low vision. It also provides links to online tools that can be used to verify that the site is designed appropriately for visitors with vision problems.</p>
+  <p><a href="http://webaim.org/articles/visual/" target="_blank">WebAim: Visual Disabilities</a>: <br>
+    This site discusses what low vision is, and its various causes. It gives recommendations for Web design that can be useful for anyone with any form of low vision or blindness.</p>
+</section>
+
+
+<footer>
+<div id="validbox">
+	<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fedtech2.boisestate.edu%2Fkimweiss%2F502%2Faccessibility.html" target="_blank"><img src="../images/valid_html5.png" width="80" height="15" alt="HTML5 Validation Badge" /></a>
+</div>
+<p>	
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img 
+       src="http://edtech2.boisestate.edu/edtech502/images/css-valid.png" width="80" height="15"
+       alt="Valid CSS!" /></a>
+</p>
+
+<p>&copy; 2013 Kim Weiss </p>
+
+<!--This page was created for Module 4 of EdTech 502 in Summer 2013. Page created by Kim Weiss.--></footer>
+
+</div> <!--closes main div-->
+</body>
+</html>

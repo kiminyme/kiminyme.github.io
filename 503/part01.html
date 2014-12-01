@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<!--File created November 2013, for EDTECH 503 Capstone Project-->
+<meta charset="UTF-8">
+<title>Weiss 503 Capstone Part 1</title>
+<link href="styles/503capstone.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<!--this container opens the main frame of the page-->
+
+<header>
+<h1>EDTECH 503 Capstone Project</h1>
+<p>Kim Weiss<br>
+November 2013</p>
+
+</header>
+<nav>
+<ul>
+<li><a href="503capstone.html">Project Home</a></li>
+<li><a href="overview.html"> Overview</a></li>
+<li><a href="part01.html" class="current">Part 1</a></li>
+<li><a href="part02.html">Part 2</a></li>
+<li><a href="part03.html">Part 3</a></li>
+<li><a href="part04.html">Part 4</a></li>
+<li><a href="submit.html">Last Steps</a></li>
+</ul>
+</nav>
+<section id="main">
+  <h1>Introduction to HTML</h1>
+  <h2>Part 1</h2>
+  <p>In the first part of this assignment, you will open an existing HTML file to view its contents, then make changes to the file, using a browser to view the changes made to the Web page. </p>
+<p>HTML uses tags to define the separate parts of a page. In  the steps below, you will use the &lt;h1&gt; tag to define the main heading of  a page, the &lt;h2&gt; tag to define a subheading, and the &lt;p&gt; tag to  define a paragraph of text in an HTML page.</p>
+  <p>Start by watching this video.</p>
+  <video width="686" height="480" controls >
+    <source src="media/html_part1.mp4" type="video/mp4">
+  </video>
+<p>Using the <strong>introduction.html</strong> file provided in the <a href="overview.html" target="_blank">overview page</a> for this assignment, complete the following steps:</p>
+<ol>
+  <li>Double-click  the file named <em>introduction.html</em>.  This will open the file in a window of the default browser on your computer. It  will look very plain, with a single block of text. Leave this window open as  you work on the file in another window.</li>
+  <li>Open  Notepad, then open the <em>introduction.html</em><strong> </strong>file from your <em>YourNameHTML</em> folder using File/Open. <strong>You cannot open this file in Notepad by double-clicking the file.</strong></li>
+  <li>Before  changing anything in the file, note the use of the existing tags:
+    <ul>
+      <li>&lt;html&gt; … &lt;/html&gt;: The first &lt;html&gt;  tag appears at the very top of the page, to let the browser know that the file  uses HTML code. The closing tag (&lt;/html&gt;) appears at the bottom of the  page. All of the contents of the page should be inside these tags.</li>
+      <li>&lt;head&gt; … &lt;/head&gt;: The &lt;head&gt;  section includes text and other information that will not appear in the page  when viewed in the browser. This section can be used for a variety of purposes,  including adding keywords that can help a search engine find the page more  easily. In this case, only the &lt;title&gt; text appears in this section of  the page. The &lt;head&gt; section must be closed (using &lt;/head&gt;) prior  to starting the body section of the page.</li>
+      <li>&lt;title&gt; … &lt;/title&gt;: The text in this  section appears in the tab for that page when the page is opened in a browser.</li>
+      <li>&lt;body&gt; … &lt;/body&gt;: The &lt;body&gt;  section includes all parts of the document that should appear in the browser  window when the file is opened. The closing tag (&lt;/body&gt;) should appear  just above the closing &lt;/html&gt; tag.<br>
+      </li>
+    </ul>
+  </li>
+  <li>Replace  the following elements in the file, without deleting any of the existing HTML  tags already in place:
+    <ul>
+      <li>Page Title: Replace with the text <strong>Your Name Web Page</strong>.</li>
+      <li>Student Name: Replace with <strong>your first and last name</strong>.</li>
+      <li>Replace the paragraph starting with <em>Write a paragraph…</em> with an appropriate  paragraph of text about yourself.<br>
+      </li>
+    </ul>
+  </li>
+  <li>Use  File/Save or Ctrl-S to save the changes to the file. <strong>Do not close the file at this time</strong>.</li>
+  <li>Switch  back to your browser window and use the Refresh button in the toolbar or the F5  key to refresh the pages and display the new text. (If you closed the browser  window earlier, you can simply double-click the <em>introduction</em> file in the <em>YourNameHTML </em>folder to reopen it.)  </li>
+</ol>
+<p>At this point, your Web Page should look very dull, with a  single block of text and without any color or pictures. The font used to  display the text in your browser may be different from the font shown in this  screen shot, depending on the settings in your browser. The HTML file does not  define what font to use, so the browser will display the font using its own  default settings.</p>
+<p><img src="media/html_fig1-1.png" width="600" height="189" alt="Screenshot of unformatted HTML content"/></p>
+<p>The text you entered inside the &lt;title&gt; tag should  appear on the tab at the top of the window, but note that there are no line  breaks in the body of the text, even though there are line breaks in the file  in Notepad. This is because there are no HTML tags in the body of the page, to  tell the browser how the text should be separated into blocks.</p>
+<p>Complete the following steps to define separate sections of  your page.</p>
+<ol start="7">
+  <li>Switch  back to your Notepad window without closing your browser window.</li>
+  <li>Add  the Heading 1 tags (h1) around the title <em>Introduction  to HTML</em>, so it looks like:<br>
+    <br>
+    &lt;h1&gt;Introduction to HTML&lt;/h1&gt;<br>
+    <br>
+  </li>
+  <li>Add  Heading 2 tags (h2) around your name:<br>
+    <br>
+    &lt;h2&gt;Student Name&lt;/h2&gt;<br>
+    <br>
+  </li>
+  <li>Add  paragraph tags (p) around the paragraph:<br>
+    <br>
+    &lt;p&gt;Write a paragraph (about 100 words) that describes something personal  about yourself. You can write about why you are in college, what you plan to do  in the future, what your family or hometown is like, or what your hobbies are,  for example.&lt;/p&gt;<br>
+    <br>
+    (Remember that your file should include a paragraph about yourself at this  point, rather than the original text shown above.)<br>
+    <br>
+  </li>
+  <li>Check  to make sure that you have closed each tag correctly, as shown above.</li>
+  <li>Use  File/Save to save the changes to the file in Notepad, but do not close the  file.</li>
+</ol>
+Switch back to the page displayed in your  browser, and use the Reload button in the toolbar or F5 (in any Windows  browser) to refresh the page. Your page should now appear with correct line  breaks, and with the heading text formatted in a larger font:<br>
+<p><img src="media/html_fig1-2.png" width="497" height="280" alt="screenshot of formatted HTML text"/></p>
+<p>Because different browsers use different default settings, your page may look a little different. If  you do not see the correct line breaks and/or different font sizes, go back to  the file in Notepad and make sure that each tag was added correctly to each  part of the body of the document. At this point, the HTML page should look  something like:</p>
+<p><img src="media/html_fig1-3.png" width="600" height="524" alt="Screenshot of HTML code"/></p>
+<p>Each time you make changes to the file in Notepad, you must  save those changes in Notepad, then refresh the page in your browser window to  see those changes.</p>
+<p>Once you are satisfied with the layout of the text in your  browser, take time to proofread the text that appears in the browser window and  note any spelling or grammar errors. If there are errors, make corrections in  the Notepad window and save them.</p>
+<p>When you are happy with the page content and layout, move  onto <a href="part02.html">Part 2</a>.<br>
+</p>
+<p><br>
+</p>
+</sectioin>
+
+<footer>
+<p>&copy; 2013 Kim Weiss</p>
+
+</footer>
+
+</div> <!--this tag closes the container section-->
+</body>
+</html>

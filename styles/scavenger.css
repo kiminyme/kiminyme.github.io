@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+/* Created by Kim Weiss, Summer 2013 */
+
+/* tag styles */
+body {
+	font-size:100%;
+	color: #E51;
+	background-color: #ffc;
+	font-family:Arial, Tahoma, "Tw Cen MT", Verdana, sans-serif;
+	text-align:center;
+	line-height:125%;
+}
+
+h1, h2, h3, h4 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+h1 {
+	font-size: 200%;
+	text-align:center;
+	color: #FFC;
+	background-color:#E51;
+	line-height: 150%;
+}
+
+h2 {
+	font-size: 150%;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	margin: 3px -15px;
+	border-top:3px solid #900;
+	border-bottom:3px solid #900;
+}
+
+h3 {
+	font-size: 125%;
+	border-bottom:thin solid #900;
+}
+
+a {
+	color: #900;
+	background-color:#ffc;
+	font-size:100%;
+	font-style:italic;
+}
+
+a:link {
+	text-decoration:underline;
+}
+
+a:visited {
+	text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+	font-weight:bold;
+}
+
+section, aside, footer {
+	font-size:100%;
+	color: #900;
+	background-color:#ffc;
+	margin: 0px 10px 0px 10px;
+	padding: 2px 15px;
+	text-align:left;
+}
+
+header {
+	padding-top:5px;
+}
+
+section {
+}
+
+footer {
+	font-size: 75%;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align:center;
+	float:none;
+	border-top: thick solid #E51;
+	border-bottom: thick solid #E51;
+	padding-top: 8px;
+}
+
+ul li {
+	padding-bottom:5px;
+	list-style-image: url('../images/checkmark.png');
+}
+
+li ul li {
+	list-style-image: url('../images/barbullet.fw.png');
+	padding-bottom:5px;
+}
+
+li ul li ul li {
+	list-style-image: url('../images/circlebullet.png');
+}
+
+
+/* class styles */
+.standout {
+	font-weight:900;
+	font-style:italic;
+}
+
+.apaurl {
+	font-style:normal;
+	text-decoration:none;
+}
+
+.extrapad {
+	padding-top: 5px;
+}
+
+/* id styles */
+#main {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+	background-color:#E51;
+	box-shadow: 10px 10px 10px #900;
+}
+
+
+/* Created by Kim Weiss, Summer 2013 */

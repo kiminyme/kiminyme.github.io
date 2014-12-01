@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<!--File created November 2013, for EDTECH 503 Capstone Project-->
+<meta charset="UTF-8">
+<title>Weiss 503 Capstone Part 1</title>
+<link href="styles/503capstone.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<!--this container opens the main frame of the page-->
+
+<header>
+<h1>EDTECH 503 Capstone Project</h1>
+<p>Kim Weiss<br>
+November 2013</p>
+
+</header>
+<nav>
+<ul>
+<li><a href="503capstone.html">Project Home</a></li>
+<li><a href="overview.html"> Overview</a></li>
+<li><a href="part01.html">Part 1</a></li>
+<li><a href="part02.html">Part 2</a></li>
+<li><a href="part03.html">Part 3</a></li>
+<li><a href="part04.html" class="current">Part 4</a></li>
+<li><a href="submit.html">Last Steps</a></li>
+</ul>
+</nav>
+<section id="main">
+  <h1>Introduction to HTML</h1>
+  <h2>Part 4: Applying a CSS file to the HTML file</h2>
+  <video width="686" height="480" controls >
+    <source src="media/html_part4.mp4" type="video/mp4">
+  </video>
+  <p>In current Web design practice, most of the formatting for a  Web page is done using CSS, a special coding page that allows the Web designer  to design a template, and then apply the styles in that template to multiple  pages of a Website at the same time. While some formatting can be applied  directly through the HTML coding, CSS is preferred because it is a much more  efficient way to make changes not only to multiple files at one time, but also  to make uniform changes to all parts of each page without having to apply the formatting  to each element individually.</p>
+  <p>In this part of the assignment, you are asked to link a CSS  file to your HTML page, then to make changes to the format settings defined in  the CSS file.</p>
+  <p>If you took a break at the end of Part 3, make sure that you  have the <em>introduction.html</em> file open  in both Notepad and your browser.</p>
+  <ol>
+    <li>In  your file in Notebook, add the following line of text just under the  &lt;title&gt; line, above the closing &lt;/head&gt; line:<br>
+      <br>
+      <img src="media/html_fig4-1.png" width="550" height="125" alt="Screenshot of link to CSS file"/><br>
+      <br>
+    </li>
+    <li>Save  the file in Notepad, then refresh the page in your browser window. It should  now have more color, and all text should be in Arial.<br>
+      <br>
+      <img src="media/html_fig4-2.png" width="600" height="537" alt=""/>      <br>
+    </li>
+  </ol>
+  <p>The page appears different now because you have applied the  formats from the CSS file to this HTML page, including the fact that the  background should be formatted in tan, with text displayed in Arial font. The  heading 1 text at the top of the page is dark blue, while your name appears in  a lighter shade of blue.</p>
+  <p>You can modify the settings in your Web page by changing the  settings in the CSS file, using the following steps:</p>
+  <ul>
+    <li>Make  sure that the HTML file is open in both Notepad and in your browser.</li>
+    <li>Right-click  the Notepad icon on the Windows taskbar, and select Notepad. This will open a  new, empty Notepad file. Use File/Open in the new window to open the style.css  file provided for this assignment. <strong>You  cannot open this file in Notepad by double-clicking the file.</strong>  </li>
+  </ul>
+  <p>The opened file should look like:<br>
+    <br>
+    <img src="media/html_fig4-3.png" width="550" height="310" alt="Screenshot of CSS code"/><br>
+    <br>
+    At this point, you may want to resize and arrange the  Notepad windows so that you can see them side by side. If you compare the two  files, you will see that the tags used to separate the text into sections in  the HTML file match the tags listed in the CSS file.<br>
+  <br>
+  <img src="media/html_fig4-4.png" width="800" height="380" alt=""/><br>
+  <br>
+    The CSS file includes the formatting instructions that apply to the HTML file  displayed in the browser. In this case, the CSS file includes the following  formatting rules:</p>
+  <ul>
+    <li>The text inside the &lt;body&gt; tag (which  includes all text in the visible window in the browser) will be formatted in  Arial font.</li>
+    <li>The body of the page (the main window in the  browser) will be formatted with a tan background.</li>
+    <li>The heading 1 text (&lt;h1&gt; … &lt;/h1&gt;)  will be formatted in dark blue.</li>
+    <li>The heading 2 text (&lt;h2&gt; … &lt;/h2&gt;)  will be formatted in teal.</li>
+  </ul>
+  <p>You are now ready to customize the format settings on your  page. You can choose to change colors, change the font face, or add other  formatting elements. Note the use of curly brackets {&nbsp;&nbsp;} to enclose  the format settings for each section. As you make changes to the CSS file, make  sure not to delete any of the existing brackets. If you choose to add new formatting  statements to any of the sections, add each statement to a new line inside the  correct set of brackets, with a semi-colon (;) at the end of each line, as  shown in the CSS file provided.</p>
+  <p>After making each change in the CSS file, you should save  the file (using File/Save or Ctrl-S), then refresh your page in the browser  window to see how the change affects your page. It is recommended that you save  and refresh frequently, after each change, so that you can more easily identify  errors in the CSS text as soon as they occur.</p>
+  <p>You may find the following pages useful in this exercise:</p>
+  <ul>
+    <li>HTML color names: <a href="http://www.w3schools.com/html/html_colornames.asp">http://www.w3schools.com/html/html_colornames.asp</a></li>
+    <li>CSS font settings: <a href="http://www.w3schools.com/css/css_font.asp">http://www.w3schools.com/css/css_font.asp</a></li>
+    <li>CSS Backgrounds: <a href="http://www.w3schools.com/css/css_background.asp">http://www.w3schools.com/css/css_background.asp</a><br>
+    </li>
+  </ul>
+  <p>Some design tips:</p>
+  <ul>
+    <li>Use light background colors with dark fonts or  vice versa to ensure that the text is visible on your page.</li>
+    <li>Use only standard fonts that are easy to read.  Good choices include Arial, Tahoma, Times New Roman, Calibri, Cambria, and  Georgia.</li>
+    <li>Avoid frivolous fonts like Comic Sans or fonts  that are hard to read like Algerian or Old English.</li>
+    <li>Use colors that complement each other. It is  better to use varying shades of one or two colors than it is to use many  completely different colors.</li>
+    <li>Avoid large blocks of bright colors like yellow  or neon green. These colors can be useful to highlight specific elements on a  page, but they can be hard on the eyes if used extensively.</li>
+    <li>While you can specify font size in the CSS  codes, at this point it is better not to. Your browser will determine  appropriate font sizes so that the user can distinguish the headings from the  body text.</li>
+    <li>Take time to proofread all text that appears in  the browser window for spelling and grammar errors. If you see errors, make  corrections in the HTML file.</li>
+    <li>You are welcome (and even encouraged!) to ask  for feedback from a friend or classmate, as long as you do the HTML and CSS  coding yourself.</li>
+  </ul>
+  <p>At this point, you are almost done with the assignment. You are ready to <a href="submit.html">submit your work</a>.</p>
+  <p>&nbsp;</p>
+<p><br>
+</p>
+</sectioin>
+
+<footer>
+<p>&copy; 2013 Kim Weiss</p>
+
+</footer>
+
+</div> <!--this tag closes the container section-->
+</body>
+</html>

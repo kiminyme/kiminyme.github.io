@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+/* code written by Kim Weiss, Summer 2013 */
+
+/*tags*/
+body {
+	background-image:url(../images/binary1.jpg);
+	background-attachment:fixed;
+	background-position:center; 
+	font-size:100%;
+	color: #020202;
+	font-family:Arial, Tahoma, "Tw Cen MT", Verdana, sans-serif;
+	text-align:center;
+	line-height:125%;
+}
+
+header {
+	height:100px;
+	background-color:#f2f7f6;
+	border-bottom:thin solid #020202;
+	padding-top:12px;
+}
+
+h1, h2, h3, h4 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+h1 {
+	font-size: 250%;
+	text-align:center;
+	color: #020202;
+}
+
+h2 {
+	font-size: 150%;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	margin: 3px -15px;
+	border-top:thin solid #020202;
+	border-bottom:3px solid #020202;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+section {
+	font-size:100%;
+	color: #020202;
+	background-color:#f2f7f6;
+	margin: 0px;
+	padding: 2px 15px;
+	text-align:left;
+}
+
+footer {
+	color: #020202;
+	background-color:#f2f7f6;
+	margin: 0px;
+	font-size: 75%;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	text-align:center;
+	float:none;
+	border-top: thick solid #020202;
+	padding-top: 8px;
+	padding-bottom:12px;
+}
+
+th, td {
+	border-bottom:1px solid #020202;
+}
+
+table {
+	margin-bottom:24px;
+	border-collapse:collapse;
+}
+
+caption {
+	font-size: 125%;
+	padding-top:8px;
+	padding-bottom:10px;
+}
+
+a {
+	color: #020202;
+	font-size:100%;
+	font-style:italic;
+}
+
+a:link {
+	text-decoration:underline;
+}
+
+a:visited {
+	text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+	font-style: normal;
+	color: #900;
+}
+
+
+
+/*ids*/
+#main {
+	width: 960px;
+	margin: 0 auto 40px auto;
+	text-align: left;
+	padding-bottom: 8px;
+	border:thin solid #020202;
+}
+
+#table1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cell1 {
+	width:140px;
+	padding-top:8px;
+	padding-bottom:8px;
+	vertical-align:top;
+	text-align:center;
+}
+
+#cell2 {
+	width:140px;
+	padding-top:8px;
+	padding-bottom:8px;
+	vertical-align:top;
+	text-align:center;
+}
+
+#cell3 {
+	padding-top:8px;
+	padding-bottom:8px;
+	vertical-align:top;
+	text-align:center;
+}
+
+#intro {
+	font-size:75%;
+	font-style:italic;
+}
+
+/*classes*/
+
+.row1 {
+	color: #f2f7f6;
+	background-color:#020202;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.top {
+	padding-top: 10px;
+	padding-left:8px;
+	vertical-align:top;
+}
+
+.top3 {
+	padding-left:8px;
+	vertical-align:top;
+}
+
+
