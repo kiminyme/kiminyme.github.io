@@ -1,12 +1,29 @@
 <!DOCTYPE html> 
 <html> 
 <body> 
-<form action="formecho.php" method="post"> 
+<!--<form action="formecho.php" method="post">-->
+<form action="formecho.php" method="post">
 Name: <input type="text" name="username"/> 
 <br/><br/> 
 E-Mail: <input type="text" name="e-mail"/> 
 <br><br>
 <input type="submit" value="Click to Submit"/>
 </form> 
+<?php 
+ $msg="Values submitted by the user:<br/>"; 
+foreach($_POST as $key => $val){ 
+  if (is_array($val)){ 
+   $msg.="Item: $key<br>"; 
+   foreach($val as $v){ 
+    $v = stripslashes($v); 
+    $msg.=" $v<br>"; 
+   } 
+     } else { 
+   $val = stripslashes($val); 
+   $msg.="$key: $val<br>"; 
+  } 
+ } 
+ echo $msg; 
+?>
 </body> 
 </html>
