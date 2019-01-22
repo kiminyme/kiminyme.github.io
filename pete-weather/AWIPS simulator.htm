@@ -1,0 +1,394 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META HTTP-EQUIV="Refresh" CONTENT="300">
+<title>AWIPS Simulator</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body bgcolor="000000">
+
+<table border="1" width="108%" height="308" style="border-collapse: collapse">
+	<tr>
+		<td width="404">
+		<img src="http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33"
+		width="525" height="410" style="border-collapse: collapse" id="column1">
+	</td>
+		<td width="404">
+		<img src="http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33"
+		width="525" height="410" style="border-collapse: collapse" id="column2">
+	</td>
+</tr>
+</table>
+
+<table border="1" id="table1" style="border-collapse: collapse" width="1058">
+	<tr>
+		<td width="135"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<p align="right">
+		<b><font color="#00FF00" face="Arial"></a>
+		&nbsp;Echo &amp; Doppler</font></b></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">NW</font></b></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=385&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=447&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">SW
+	</font></b>
+	</td>
+		<td width="60"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">	
+		<b><font color="#00FF00" face="Arial">Central
+	</font></b>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">NE
+	</font></b>
+	</td>
+		<td width="32"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">SE
+	</font></b>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">BG
+	</font></b>
+	</td>
+		<td width="66"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#00FF00" face="Arial">LMK FA </font></b>
+	</td>
+		<td width="89"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<font color="#00FF00" face="Arial" size="4">WX4NWS</font></td>
+		<td width="91"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<font face="Arial" size="4" color="#66FFCC">Vector -&gt;</font></span></td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="31">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">NW</font></b></span>
+	</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=385&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=447&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="34">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">SW</font></b>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="67">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">Central</font></b>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="31">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">NE</font></b>
+	</span>
+		</font>
+	</td>
+		<td
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')"
+        bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="34">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">SE</font></b>
+	</span>
+		</font>
+	</td>
+		<td 
+		        onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="36">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF">BG</font></b>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#00FFFF"> LMK FA</font></b> </span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="91">
+		<span style="text-decoration: overline">
+		<font face="Arial" size="4" color="#00FFFF">WX4NWS</font></span></td>
+	</tr>
+</table>
+
+<table border="1" id="table3" style="border-collapse: collapse" width="1059" height="23">
+	<tr>
+		<td width="135"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<p align="right">
+		<b><font color="#FF6699" face="Arial"></a>
+	&nbsp;Total Precip</font></b></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">NW</font></b></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=447&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">SW
+	</font></b>
+	</td>
+		<td width="60"
+		onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">	
+		<b><font color="#FF6699" face="Arial">Central
+	</font></b>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">NE
+	</font></b>
+	</td>
+		<td width="32"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">SE
+	</font></b>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">BG
+	</font></b>
+	</td>
+		<td width="66"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<b><font color="#FF6699" face="Arial">LMK FA </font></b>
+	</td>
+		<td width="89"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<font color="#FF6699" face="Arial" size="4">WX4NWS</font></td>
+		<td width="91"
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=0&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<font face="Arial" size="4" color="#FF6699">Vector -&gt;</font></span></td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="31">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">NW</font></b></span><font color="#FF6699"> </font>
+	</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=447&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="34">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">SW</font></b><font color="#FF6699"> </font>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="67">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">Central</font></b><font color="#FF6699"> </font>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="31">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">NE</font></b><font color="#FF6699"> </font>
+	</span>
+		</font>
+	</td>
+		<td
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')"
+        bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="34">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">SE</font></b><font color="#FF6699"> </font>
+	</span>
+		</font>
+	</td>
+		<td 
+		        onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="36">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699">BG</font></b><font color="#FF6699"> </font>
+	</span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<font face="Arial">
+		<span style="text-decoration: overline"><b>
+		<font color="#FF6699"> LMK FA</font></b><font color="#FF6699"> </font> </span>
+		</font>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')"
+		bgcolor="#000000" align="center" bordercolor="#C0C0C0" width="91">
+		<span style="text-decoration: overline">
+		<font face="Arial" size="4" color="#FF6699">WX4NWS</font></span></td>
+	</tr>
+</table>
+
+<table border="0" width="1059" id="table4" cellspacing="1" style="border-collapse: collapse">
+	<tr>
+		<td width="135"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=0&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<p align="right">
+		<b><font color="#CC99FF" face="Arial"></a>
+		&nbsp;Vertically Integrated Liquid</font></b></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NTP&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=575&centery=326&transx=175&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">NW</font></b></span></td>
+		<td width="33"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=447&map.y=357&centerx=552&centery=-40&transx=152&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">SW
+	</font></b>
+		</span>
+	</td>
+		<td width="60"
+		onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=413&map.y=243&centerx=368&centery=400&transx=-32&transy=-160')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">	
+		<span style="text-decoration: overline">	
+		<b><font color="#CC99FF" face="Arial">Central
+	</font></b>
+		</span>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.325&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=152&centerx=100&centery=326&transx=-300&transy=86')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">NE
+	</font></b>
+		</span>
+	</td>
+		<td width="32"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=440&map.y=357&centerx=100&centery=-40&transx=-300&transy=-280')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">SE
+	</font></b>
+		</span>
+	</td>
+		<td width="33"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.300&noclutter=0&lat=0&lon=0&label=you&showstorms=10&map.x=603&map.y=250&centerx=0&centery=200&transx=-400&transy=40')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">BG
+	</font></b>
+		</span>
+	</td>
+		<td width="66"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.600&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=386&centery=207&transx=-14&transy=-33')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<b><font color="#CC99FF" face="Arial">LMK FA </font></b>
+		</span>
+	</td>
+		<td width="89"
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=LVX&brand=wui&num=1&delay=15&type=NVL&frame=0&scale=0.200&noclutter=0&lon=0&label=you&showstorms=10&map.x=342&map.y=230&centerx=300&centery=310&transx=-100&transy=70')" bgcolor="#000000" align="center" bordercolor="#C0C0C0">
+		<span style="text-decoration: overline">
+		<font color="#CC99FF" face="Arial" size="4">WX4NWS</font></span></td>
+		<td width="120" bgcolor="#000000" bordercolor="#C0C0C0" align="center" valign="baseline">
+		<font color="#FFFFFF" face="Arial" size="4">
+		<a href="Main%20Weather.htm"><font color="#FFFFFF">Main</font></a></font><p>&nbsp;</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=VWX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092168641&lat=0&lon=0&label=you&showstorms=0&map.x=441&map.y=267&centerx=223&centery=217&transx=-177&transy=-23')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=VWX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092168641&lat=0&lon=0&label=you&showstorms=0&map.x=441&map.y=267&centerx=223&centery=217&transx=-177&transy=-23')" bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="50">
+		<b><font color="#FFFF00" face="Arial">VWX
+	</font></b>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=VWX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092168641&lat=0&lon=0&label=you&showstorms=10&map.x=441&map.y=267&centerx=223&centery=217&transx=-177&transy=-23')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=VWX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092168641&lat=0&lon=0&label=you&showstorms=10&map.x=441&map.y=267&centerx=223&centery=217&transx=-177&transy=-23')" bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="53">
+		<span style="text-decoration: overline">
+		<b><font color="#FFFF00" face="Arial">VWX</font></b></span></td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=HPX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092169125&lat=0&lon=0&label=you&showstorms=0&map.x=306&map.y=246&centerx=309&centery=300&transx=-91&transy=60')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=HPX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092169125&lat=0&lon=0&label=you&showstorms=0&map.x=306&map.y=246&centerx=309&centery=300&transx=-91&transy=60')" bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="49">
+		<b><font color="#FFFF00" face="Arial">HPX
+	</font></b>
+	</td>
+		<td 
+				onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=HPX&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092169125&lat=0&lon=0&label=you&showstorms=10&map.x=306&map.y=246&centerx=309&centery=300&transx=-91&transy=60')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=HPX&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092169125&lat=0&lon=0&label=you&showstorms=10&map.x=306&map.y=246&centerx=309&centery=300&transx=-91&transy=60')" bgcolor="#000000" bordercolor="#C0C0C0" align="center">
+		<span style="text-decoration: overline"><b>
+		<font color="#FFFF00" face="Arial">HPX</font></b></span>
+		</td>
+		<td 
+						onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=JKL&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092169326&lat=0&lon=0&label=you&showstorms=0&map.x=331&map.y=240&centerx=619&centery=252&transx=219&transy=12')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=JKL&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092169326&lat=0&lon=0&label=you&showstorms=0&map.x=331&map.y=240&centerx=619&centery=252&transx=219&transy=12')" bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="46">
+		<b><font color="#FFFF00" face="Arial">JKL
+	</font></b>
+	</td>
+		<td 
+						onclick="FP_swapImg(1,0,/*id*/'column1',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=JKL&brand=wui&num=1&delay=15&type=N0R&frame=0&scale=0.500&noclutter=0&t=1092169326&lat=0&lon=0&label=you&showstorms=10&map.x=331&map.y=240&centerx=619&centery=252&transx=219&transy=12')
+		FP_swapImg(1,0,/*id*/'column2',/*url*/'http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=JKL&brand=wui&num=1&delay=15&type=N0V&frame=0&scale=0.500&noclutter=0&t=1092169326&lat=0&lon=0&label=you&showstorms=10&map.x=331&map.y=240&centerx=619&centery=252&transx=219&transy=12')" bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="47">
+		<span style="text-decoration: overline">
+		<b><font color="#FFFF00" face="Arial">JKL</font></b></span></td>
+		<td bgcolor="#000000" bordercolor="#C0C0C0" align="center" width="80"><b><a href="http://iwin.nws.noaa.gov/iwin/ky/warnings.html">
+		<font color="#FFFF00" face="Arial">Warnings</font></a></b></td>
+		
+	</tr>
+	</table>
+
+</body>
+
+</html>

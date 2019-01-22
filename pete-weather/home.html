@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Pete's Weather Home Page</title>
+        
+        <!--Bootstrap styles-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Libre+Baskerville" rel="stylesheet">
+        
+        <link href="mainstyles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+        <h1>Main Weather Page</h1>
+        <div class="row" id="row1">
+        <nav>
+            <ul id="navbtns">
+                <li><a href="AWIPS%20simulator.htm">AWIPS Simulator</a></li>
+                <li><a href="forecast.html">Forecast Page</a></li>
+                <li><a href="radio.html">Radio Page</a></li>
+            
+            </ul>
+        
+            <div class="clearfloat"></div>
+        </nav>
+        </div> <!--End .row1-->
+    <div class="row" id="row2">
+        <div class="col-3">
+        <p class="hover">External Links</p>
+        <ul id="buttons">
+            <li><a href="https://forecast.weather.gov/product.php?site=LMK&issuedby=LMK&product=AFD&format=CI&version=1&glossary=1" target="_blank">Forecast</a></li>
+            <li><a href="http://www.nohrsc.noaa.gov/interactive/html/map.html" target="_blank">Snow Cover</a></li>
+            <li><a href="https://www.spc.noaa.gov/climo/reports/today.html" target="_blank">Severe Weather Reports</a></li>
+            <li><a href="https://www.wunderground.com/weather-radar/united-states-regional/ky/bowling-green" target="_blank">Regional Radar</a></li>
+        
+        </ul>
+    </div>
+        
+        <div class="col">
+            <p class="hover">Embedded Links</p>
+            <div id="graphics">
+                <figure><figcaption>Louisville Radar</figcaption><img class="img-fluid" src="https://radar.weather.gov/lite/N0R/LVX_0.png" /></figure>
+                <figure><figcaption>National Map</figcaption><img src="https://www.wpc.ncep.noaa.gov/sfc/namussfcwbg.gif" /></figure>
+                <figure><figcaption>National Temperature Map</figcaption><img class="img-fluid" src="https://graphical.weather.gov/images/conus/MaxT1_conus.png" /></figure>
+                <figure><a href="https://www.spc.noaa.gov/products/md/" target="_blank"><figcaption>Mesoscale Discussions</figcaption><img class="img-fluid" src="https://www.spc.noaa.gov/products/md/validmd.png" /></a></figure>
+                <figure><a href="https://www.spc.noaa.gov/products/watch/" target="_blank"><figcaption>Severe Watches</figcaption><img class="img-fluid" src="https://www.spc.noaa.gov/products/watch/validww.png" /></a></figure>
+                <div class="clearfloat"></div>  
+            
+            </div>
+        </div>
+            </div> <!--End .row2-->
+            </div> <!--End .container-fluid-->
+        
+        <!--Bootstrap JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

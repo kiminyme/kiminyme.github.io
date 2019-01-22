@@ -1,0 +1,132 @@
+/*<link href="https://fonts.googleapis.com/css?family=Catamaran|Libre+Baskerville" rel="stylesheet">*/
+
+body {
+    background-color: black;
+    color: lightgray;
+    font-family: 'Catamaran', arial, sans-serif;
+    width:80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Libre Baskerville', garamond, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+#navbtns {
+    padding: 20px;
+    list-style: none;
+    border: solid white thin;
+    z-index: 1;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    
+}
+
+#navbtns li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#navbtns a {
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border:solid white thin;
+    text-align: center;
+}
+
+#navbtns a:hover {
+    color:black;
+    background-color: aliceblue;
+}
+
+.main {
+    border: thick pink solid;
+    width: 25%;
+    float:left;
+        
+}
+
+#buttons {
+    padding: 20px 20px 5px 20px;
+    list-style: none;
+    border: solid white thin;
+    z-index: 1;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+#buttons li {
+    margin-bottom: 10px;
+}
+
+#buttons a {
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border:solid white thin;
+    text-align: center;
+    
+}
+
+#buttons a:hover {
+    color:black;
+    background-color: ivory;
+    border: solid black thin;
+}
+
+.hover {
+    margin-left: 20px;      
+    display: inline-block       ;
+    padding: 0 10px;
+    color: white;
+    background-color: black;
+    opacity: 1;
+    font-weight: bold;
+    z-index: 5;
+      
+}
+
+#graphics {
+    padding: 20px 10px;
+    border: solid white thin;
+    z-index: 1;
+    margin-top: -30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+figure {
+    float: left;
+    margin-left: 20px;
+    margin-right: 0;
+    
+}
+
+figcaption {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+img {
+    max-height: 400px;
+}
+
+.float {
+    float: left;
+}
